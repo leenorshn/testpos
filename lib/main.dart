@@ -7,9 +7,10 @@ import 'package:flutter/services.dart';
 import 'package:image/image.dart';
 import 'package:esc_pos_utils/esc_pos_utils.dart';
 import 'package:esc_pos_bluetooth/esc_pos_bluetooth.dart';
+import 'package:flutter_bluetooth_basic/flutter_bluetooth_basic.dart';
+
 import 'package:flutter/material.dart' hide Image;
 import 'package:oktoast/oktoast.dart';
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -43,12 +44,24 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
 
-    printerManager.scanResults.listen((devices) async {
-      // print('UI: Devices found ${devices.length}');
-      setState(() {
-        _devices = devices;
-      });
-    });
+    // printerManager.scanResults.listen((devices) async {
+    //   // print('UI: Devices found ${devices.length}');
+    //   setState(() {
+    //     _devices = devices;
+    //   });
+    // });
+
+
+    BluetoothDevice device= new BluetoothDevice();
+    device.name = "DEFAULT PRINTER";
+    device.address = "adresse_bleutoof du device";
+    PrinterBluetooth printerBluetooth = PrinterBluetooth(device);
+    _devices.add(printerBluetooth);
+    //
+    // if(_prefs!.getString("adresseImprimante").toString().isNotEmpty)
+    //   devices.add(printerBluetooth);
+    //
+    // _devices = devices;
   }
 
   void _startScanDevices() {
