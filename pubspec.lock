@@ -71,13 +71,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
-  esc_pos_bluetooth:
-    dependency: "direct main"
-    description:
-      path: esc_pos_bluetooth
-      relative: true
-    source: path
-    version: "0.4.1"
   esc_pos_utils:
     dependency: "direct main"
     description:
@@ -111,13 +104,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_bluetooth_basic:
-    dependency: transitive
-    description:
-      name: flutter_bluetooth_basic
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.7"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -165,13 +151,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.0"
-  json_annotation:
-    dependency: transitive
-    description:
-      name: json_annotation
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.7.0"
   lints:
     dependency: transitive
     description:
@@ -305,13 +284,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.0"
-  rxdart:
-    dependency: transitive
-    description:
-      name: rxdart
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.26.0"
   sky_engine:
     dependency: transitive
     description: flutter
